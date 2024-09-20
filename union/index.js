@@ -1,6 +1,7 @@
+"use strict";
 // type script mai union ko pipe symbol se use krte hai 
 // |
-var inputVal = function (value) {
+const inputVal = (value) => {
     if (typeof value == 'string') {
         return value.toUpperCase();
     }
@@ -11,3 +12,14 @@ var inputVal = function (value) {
 console.log(inputVal(10));
 console.log(inputVal('helo'));
 inputVal(true);
+const Employeees = {
+    name: 'niitn',
+    age: 23,
+    emp_id: 123,
+};
+const myperson = {
+    name: 'nitin',
+    age: 20,
+    emp_id: 123,
+    department: "IT"
+};

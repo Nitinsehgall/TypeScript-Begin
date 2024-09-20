@@ -36,3 +36,15 @@ const addTwo=(num1:String ,num2:number)=>{
 
 addTwo("hello world",123)
 
+
+
+// generics in typescript
+
+//generic mai ek hi type uthatta ha agr hume dusra type dalna ha same funciton mai to dubara <>ismai define krna hoga
+function na<t,c>(a:t,b:c){
+    console.log(a,b);
+    console.log(typeof a,typeof b);
+}
+
+
+const result=na<string,number>("hello world",123);
